@@ -1,0 +1,30 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "98970341454759FC3FE8F873F484C3FF6717327A",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "F00E4BFE136530CE8FB8063FB1831EC78692C098" : 9223372036854775807,
+    "98970341454759FC3FE8F873F484C3FF6717327A" : 9223372036854775807
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "538D8D87-BC5C-4DBF-924B-5DB5B5931A93",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "F00E4BFE136530CE8FB8063FB1831EC78692C098" : "..",
+    "98970341454759FC3FE8F873F484C3FF6717327A" : "scopley_inAppTimer\/"
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "scopley_inAppTimer",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "scopley_inAppTimer.xcodeproj",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/SolutionsArchitecture\/scopley_inAppTimer.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "98970341454759FC3FE8F873F484C3FF6717327A"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/LPSA\/SAPrototypes",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "F00E4BFE136530CE8FB8063FB1831EC78692C098"
+    }
+  ]
+}

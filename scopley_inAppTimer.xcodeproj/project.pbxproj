@@ -15,6 +15,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		537959BDA264A942C489BF93 /* Pods-scopley_inAppTimer.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-scopley_inAppTimer.debug.xcconfig"; path = "Pods/Target Support Files/Pods-scopley_inAppTimer/Pods-scopley_inAppTimer.debug.xcconfig"; sourceTree = "<group>"; };
 		76580F811F27B965001210E7 /* scopley_inAppTimer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = scopley_inAppTimer.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		76580F841F27B965001210E7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		76580F861F27B965001210E7 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -22,6 +23,7 @@
 		76580F8B1F27B965001210E7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		76580F8E1F27B965001210E7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		76580F901F27B965001210E7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DD68DB71A1B983AD363810C7 /* Pods-scopley_inAppTimer.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-scopley_inAppTimer.release.xcconfig"; path = "Pods/Target Support Files/Pods-scopley_inAppTimer/Pods-scopley_inAppTimer.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -35,11 +37,20 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		31A6E110E31EA19464C80A7A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		76580F781F27B965001210E7 = {
 			isa = PBXGroup;
 			children = (
 				76580F831F27B965001210E7 /* scopley_inAppTimer */,
 				76580F821F27B965001210E7 /* Products */,
+				A746496B1B0A0CD066F0D53F /* Pods */,
+				31A6E110E31EA19464C80A7A /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -64,6 +75,15 @@
 			path = scopley_inAppTimer;
 			sourceTree = "<group>";
 		};
+		A746496B1B0A0CD066F0D53F /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				537959BDA264A942C489BF93 /* Pods-scopley_inAppTimer.debug.xcconfig */,
+				DD68DB71A1B983AD363810C7 /* Pods-scopley_inAppTimer.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -71,9 +91,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 76580F931F27B965001210E7 /* Build configuration list for PBXNativeTarget "scopley_inAppTimer" */;
 			buildPhases = (
+				F0729B2D97D9D0163AFE119F /* [CP] Check Pods Manifest.lock */,
 				76580F7D1F27B965001210E7 /* Sources */,
 				76580F7E1F27B965001210E7 /* Frameworks */,
 				76580F7F1F27B965001210E7 /* Resources */,
+				9BD061F9433247B19FD1DC6F /* [CP] Embed Pods Frameworks */,
+				A3E5850D6F08B9FEC538F5EA /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -131,6 +154,54 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		9BD061F9433247B19FD1DC6F /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-scopley_inAppTimer/Pods-scopley_inAppTimer-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A3E5850D6F08B9FEC538F5EA /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-scopley_inAppTimer/Pods-scopley_inAppTimer-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F0729B2D97D9D0163AFE119F /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		76580F7D1F27B965001210E7 /* Sources */ = {
@@ -261,11 +332,13 @@
 		};
 		76580F941F27B965001210E7 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 537959BDA264A942C489BF93 /* Pods-scopley_inAppTimer.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 57LHUURETS;
 				INFOPLIST_FILE = scopley_inAppTimer/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				OTHER_SWIFT_FLAGS = "-D DEBUG";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.michaelRawlings.scopley-inAppTimer";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
@@ -274,6 +347,7 @@
 		};
 		76580F951F27B965001210E7 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = DD68DB71A1B983AD363810C7 /* Pods-scopley_inAppTimer.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 57LHUURETS;
@@ -304,6 +378,7 @@
 				76580F951F27B965001210E7 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

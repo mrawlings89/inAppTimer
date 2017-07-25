@@ -10,11 +10,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "scopley_inAppTimer/ViewController.swift"
-            timestampString = "522699211.341492"
+            timestampString = "522699659.014148"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "27"
-            endingLineNumber = "27"
+            startingLineNumber = "28"
+            endingLineNumber = "28"
             landmarkName = "start(_:)"
             landmarkType = "7">
          </BreakpointContent>

@@ -18,23 +18,30 @@ class ViewController: UIViewController {
     @IBOutlet weak var sliderOutlet: UISlider!
     @IBAction func slider(_ sender: UISlider) {
         seconds = Int(sender.value)
-        label.text = String(seconds)
+        label.text = String(seconds) + " seconds"
     }
     
     @IBOutlet weak var startOutlet: UIButton!
     @IBAction func start(_ sender: Any)
         {
         timer = Timer.scheduledTimer(timeInterval: 1, target: self, selector: #selector(ViewController.counter), userInfo: nil, repeats: true)
+        
+        sliderOutlet.isHidden = true
+        startOutlet.isHidden = true
+            
         }
     
     func counter()
     {
         seconds -= 1
-        label.text = String(seconds)
+        label.text = String(seconds) + " seconds"
         
         if (seconds == 0)
         {
             timer.invalidate()
+            sliderOutlet.isHidden = false
+            startOutlet.isHidden = false
+
         }
     }
     
@@ -44,7 +51,11 @@ class ViewController: UIViewController {
             timer.invalidate()
             seconds = 30
             sliderOutlet.setValue(30, animated: true)
-            label.text = "30"
+            label.text = "30 seconds"
+            
+            sliderOutlet.isHidden = false
+            startOutlet.isHidden = false
+
         }
     
     override func viewDidLoad() {

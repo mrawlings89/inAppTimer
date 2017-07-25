@@ -7,6 +7,10 @@
 //
 
 import UIKit
+#if DEBUG
+    import AdSupport
+#endif
+import Leanplum
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -15,7 +19,20 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
-        // Override point for customization after application launch.
+       
+        #if DEBUG
+            Leanplum.setDeviceId(ASIdentifierManager.shared().advertisingIdentifier.uuidString)
+            Leanplum.setAppId("app_B3uWQDFBeLkzrfUabdlToOSTVJIvjz3KYxOSlWJmaJE",
+                              withDevelopmentKey:"dev_DDvIgCliozsRCShX1gbwqIy37y9lEVoDGOXOPXaGN6Q")
+        #else
+            Leanplum.setAppId("app_B3uWQDFBeLkzrfUabdlToOSTVJIvjz3KYxOSlWJmaJE",
+                              withProductionKey: "prod_YZMTF5wPrN4L4M90ON23PvpYHC5AqxI6AnAMTW72Zrk")
+        #endif
+        Leanplum.syncResourcesAsync(true)
+        Leanplum.trackInAppPurchases()
+        Leanplum.trackAllAppScreens()
+        Leanplum.start()
+        
         return true
     }
 
