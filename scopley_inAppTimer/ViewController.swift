@@ -7,11 +7,14 @@
 //
 
 import UIKit
+import Leanplum
 
 class ViewController: UIViewController {
     
     var seconds = 30
     var timer = Timer()
+    
+    
 
     @IBOutlet weak var label: UILabel!
     
@@ -28,7 +31,7 @@ class ViewController: UIViewController {
         
         sliderOutlet.isHidden = true
         startOutlet.isHidden = true
-            
+        Leanplum.track("startTimer")
         }
     
     func counter()
@@ -41,6 +44,7 @@ class ViewController: UIViewController {
             timer.invalidate()
             sliderOutlet.isHidden = false
             startOutlet.isHidden = false
+            Leanplum.track("timerEnds")
 
         }
     }
@@ -55,6 +59,7 @@ class ViewController: UIViewController {
             
             sliderOutlet.isHidden = false
             startOutlet.isHidden = false
+            Leanplum.track("stopTimer")
 
         }
     

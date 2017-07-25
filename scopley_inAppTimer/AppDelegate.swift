@@ -33,6 +33,10 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         Leanplum.trackAllAppScreens()
         Leanplum.start()
         
+        Leanplum.setUserId("mrawlings89")
+        Leanplum.setUserAttributes(["firstName": "Michael"])
+
+        
         return true
     }
 
